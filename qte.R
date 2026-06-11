@@ -1,6 +1,7 @@
 #install.packages("qte")
 library(qte)
-
+library(dplyr)
+library(knitr)
 set.seed(123)
 
 # select variables
@@ -37,5 +38,5 @@ tab <- data.frame(
     ")"
   )
 )
-flextable(tab)
+kable(tab)
 ggqte(jt.cia)
