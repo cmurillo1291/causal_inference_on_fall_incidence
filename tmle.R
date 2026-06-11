@@ -1,5 +1,9 @@
 # 2.11.	Statistical framework: Targeted Maximum Likelihood Estimation
 # ---------------------------------------------------------------------------------
+library(SuperLearner)
+library(survey)
+library(dplyr)
+library(knitr)
 set.seed(123)
 
 # Variable definition
