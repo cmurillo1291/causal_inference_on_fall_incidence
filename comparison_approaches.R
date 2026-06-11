@@ -1,4 +1,9 @@
 ### Comparison with other approaches 
+library(survey)
+library(dplyr)
+library(ggplot)
+library(knitr)
+
 ## definition survey design
 dsgn <- svydesign(
   ids = ~household, 
