@@ -1,5 +1,24 @@
 ## Causal Inference on Fall Incidents and Their Consequences Using Linked Belgian Health Interview Survey Data
 
+### Abstract
+
+**Background:**  
+Population ageing and the high prevalence of falls among older adults are contributing to rising healthcare costs. Preventive interventions such as strengthening and balance exercise are considered effective in reducing recurrent falls and fall-related morbidity. However, evidence on their impact on healthcare expenditures remains limited. Large-scale survey and administrative datasets provide an opportunity to study these effects but introduce methodological challenges, particularly confounding and complex survey design.
+
+**Aim:**  
+This thesis estimates the average treatment effect (ATE) of self-reported exercise for fall prevention on accumulated healthcare costs among older adults who experienced a fall, compared to no exercise participation.
+
+**Methods:**  
+Healthcare costs over a two-year follow-up were obtained from administrative claims data from the InterMutualistic Agency. For participants who died during follow-up, costs were accumulated only up to the time of death. Exposure and confounders were derived from the 2013 and 2018 waves of the Belgian Health Interview Survey. Exercise was defined as self-reported strengthening and balance training in the year prior to the survey. Confounders included demographic factors, clinical vulnerability, fall history, home safety, baseline healthcare costs, province, and survey wave.
+
+The ATE was estimated using Targeted Maximum Likelihood Estimation (TMLE) with Super Learner. Survey design features (weights, clustering, and stratification) were incorporated. Results were compared with unadjusted regression, forward stepwise regression, and parametric g-computation. Quantile Treatment Effects (QTE) were also estimated. Complete-case analysis was used throughout.
+
+**Results:**  
+The complete-case sample included 731 individuals (119 exercise; 612 no exercise), of whom 59 died during follow-up. The estimated ATE was −€51 (SE = 2,229; 95% CI: −4,419 to 4,317). Ignoring survey design underestimated uncertainty (SE ≈ 1,686). Unadjusted estimates suggested a large positive effect (€4,495), which decreased substantially after adjustment (€1,380–€1,400). QTE results suggested heterogeneous effects across the cost distribution, with larger positive estimates in upper quantiles but high uncertainty.
+
+**Conclusions:**  
+There is no evidence that self-reported strengthening and balance exercise after a fall reduces healthcare costs. The results highlight the importance of proper confounding adjustment and accounting for survey design when estimating causal effects using population-based survey data.
+
 ### Study Variables
 
 #### Outcome (Y)
