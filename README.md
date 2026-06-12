@@ -1,14 +1,14 @@
-# Causal Inference on Fall Incidents and Their Consequences Using Linked Belgian Health Interview Survey Data
+## Causal Inference on Fall Incidents and Their Consequences Using Linked Belgian Health Interview Survey Data
 
-## Study Variables
+### Study Variables
 
-### Outcome (Y)
+#### Outcome (Y)
 Accumulated healthcare costs over the two-year follow-up period.
 
-### Exposure (A)
+#### Exposure (A)
 Self-reported preventive exercise performance after experiencing a fall within the 12 months preceding the survey date.
 
-### Confounders (W)
+#### Confounders (W)
 
 - `cost0`: Baseline healthcare costs (preceeding year)
 - `age`
@@ -22,7 +22,7 @@ Self-reported preventive exercise performance after experiencing a fall within t
 - `fall_category`
 - `weight`: survey post-stratification weight
 
-## Repository Structure
+### Repository Structure
 
 | File | Description |
 |------|-------------|
@@ -40,16 +40,20 @@ The scripts should be run in the following order:
 
 **Note:** `tmle.R` generates objects required by the other scripts.
 
-## Data Availability
+### Data Availability
 
 The data used in this dissertation are derived from linked Belgian Health Interview Survey data and are not publicly available. Consequently, the repository contains code only and does not include the original data.
 
-## Software
+### Software
 
 Analyses were conducted in R. Required packages are loaded within the individual scripts.
 
-## Author
+### Author
 
 Carlos Murillo Ezcurra  
-Master of Statistics (MaStat)  
-Ghent University
+Master of Statistics (MaStat), Ghent University
+
+### Supervisors: 
+Prof Robby de Pauw and Prof Stijn Vansteelandt
+
+
