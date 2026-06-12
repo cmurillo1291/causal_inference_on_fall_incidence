@@ -4,6 +4,7 @@ library(SuperLearner)
 library(survey)
 library(dplyr)
 library(knitr)
+library(tmle)
 set.seed(123)
 
 # Variable definition
