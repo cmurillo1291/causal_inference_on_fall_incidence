@@ -1,11 +1,55 @@
-This repository provides the R code developed for the UGent Master of Statistics (MaStat) dissertation entitled Causal Inference on Fall Incidents and Their Consequences Using Linked Belgian Health Interview Survey Data.
+# Causal Inference on Fall Incidents and Their Consequences Using Linked Belgian Health Interview Survey Data
 
-Variable definition: 
+## Study Variables
 
-- Outcome (Y): Accumulated healthcare costs over the two-year follow-up.
+### Outcome (Y)
+Accumulated healthcare costs over the two-year follow-up period.
 
-- Exposure (A): Self-reported precentive exercise performance after fall within the 12 months before the surveyy date.
+### Exposure (A)
+Self-reported preventive exercise performance after experiencing a fall within the 12 months preceding the survey date.
 
-- Confounders (W): cost0, age,gender,mobility_restrictions_elderly, home_safer, year, multimorbidity,overweight_obese,education_cat, fall_category, weight 
+### Confounders (W)
 
-Note: tmle.R script needs to be run before positvity.R, variableimportance.R and comparison_approaches.R
+- `cost0`: Baseline healthcare costs (preceeding year)
+- `age`
+- `gender`
+- `mobility_restrictions_elderly`
+- `home_safer`
+- `year`: survey cohort
+- `multimorbidity`
+- `overweight_obese`
+- `education_cat`
+- `fall_category`
+- `weight`: survey post-stratification weight
+
+## Repository Structure
+
+| File | Description |
+|------|-------------|
+| `tmle.R` | Main TMLE analysis |
+| `positivity.R` | Positivity diagnostics |
+| `variableimportance.R` | Variable importance analysis |
+| `comparison_approaches.R` | Comparison with alternative causal inference approaches |
+
+The scripts should be run in the following order:
+
+1. `tmle.R`
+2. `positivity.R`
+3. `variableimportance.R`
+4. `comparison_approaches.R`
+
+**Note:** `tmle.R` generates objects required by the other scripts.
+
+## Data Availability
+
+The data used in this dissertation are derived from linked Belgian Health Interview Survey data and are not publicly available. Consequently, the repository contains code only and does not include the original data.
+
+## Software
+
+Analyses were conducted in R. Required packages are loaded within the individual scripts.
+
+## Author
+
+Carlos Murillo Ezcurra  
+Master of Statistics (MaStat)  
+Ghent University
