@@ -38,7 +38,7 @@ The scripts should be run in the following order:
 3. `variableimportance.R`
 4. `comparison_approaches.R`
 
-**Note:** `tmle.R` generates objects required by the other scripts.
+**Note:** `tmle.R` generates objects required by the other scripts. This script also contains the procedure to obatain the TMLE Estimates without accounting for the survey sampling design.  
 
 ### Data Availability
 
