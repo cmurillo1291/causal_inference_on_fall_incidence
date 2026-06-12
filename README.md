@@ -1,0 +1,1 @@
+This repository provides the R code developed for the UGent Master of Statistics (MaStat) dissertation entitled Causal Inference on Fall Incidents and Their Consequences Using Linked Belgian Health Interview Survey Data.
