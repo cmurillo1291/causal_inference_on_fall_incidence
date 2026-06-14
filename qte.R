@@ -2,6 +2,7 @@
 library(qte)
 library(dplyr)
 library(knitr)
+
 set.seed(123)
 
 # select variables
@@ -13,6 +14,8 @@ W <- his_subset %>%
 
 # normalization weights
 weights_norm <- his_subset$weight / mean(his_subset$weight)
+
+# QTE
 jt.cia <- ci.qte(
   formla  = Y ~ A,
   x       = W,               
