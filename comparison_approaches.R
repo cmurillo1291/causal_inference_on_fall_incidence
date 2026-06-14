@@ -1,7 +1,7 @@
 ### Comparison with other approaches 
 library(survey)
 library(dplyr)
-library(ggplot)
+library(ggplot2)
 library(knitr)
 
 ## definition survey design
