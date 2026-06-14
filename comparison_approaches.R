@@ -3,6 +3,7 @@ library(survey)
 library(dplyr)
 library(ggplot2)
 library(knitr)
+library(broom)
 
 ## definition survey design
 dsgn <- svydesign(
@@ -126,7 +127,6 @@ ci_boot
 
 # ---------------------------------------------------------------------------
 ## ploting
-library(broom)
 results <- bind_rows(
   tidy(model_unadj, conf.int = TRUE) %>%
     filter(term == "A") %>%
