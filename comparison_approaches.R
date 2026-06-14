@@ -190,7 +190,6 @@ kable(
   caption = "ATE across models"
 )
 
-# forest plot
 results <- results %>%
   mutate(
     highlight = case_when(
